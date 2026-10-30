@@ -10,7 +10,7 @@
 <link rel="preload" as="font" type="font/woff2" href="/mrn-assets/fonts/cardo-700.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="/mrn-assets/fonts/quicksand-400-700.woff2" crossorigin>
 <link rel="preconnect" href="https://scripts.converteai.net">
-<link rel="preload" as="script" href="https://scripts.converteai.net/1e9d3663-4e9d-45cb-9c39-1d16362c41e5/players/684d8948a513dfb8ce77ee91/v4/player.js">
+<link rel="preconnect" href="https://images.converteai.net">
 <!-- GTM (GTM-MNFVDBCP: pixel Meta, TikTok, GA4) e Clarity (whcopa4tqv), os mesmos da página WordPress.
      Carregam no 1º toque/rolagem/mouse ou 3,5s depois de abrir, o que vier primeiro: tira ~2s de travamento do carregamento. -->
 <script>
@@ -247,7 +247,8 @@ footer .copy{font-size:13px;margin-top:40px;opacity:.95}
     <p class="sub">O passo a passo completo, desde os primeiros cuidados, amamentação, rotina e sono do bebê, que já foi aplicado por mais de 21.000 mães pelo Brasil e mundo</p>
     <div class="vsl">
       <vturb-smartplayer id="vid-684d8948a513dfb8ce77ee91" style="display:block;margin:0 auto;width:100%"></vturb-smartplayer>
-      <script>var s=document.createElement("script");s.src="https://scripts.converteai.net/1e9d3663-4e9d-45cb-9c39-1d16362c41e5/players/684d8948a513dfb8ce77ee91/v4/player.js";s.async=!0;document.head.appendChild(s);</script>
+      <script>/* player da vturb entra logo depois da 1ª pintura: a página aparece antes e o vídeo começa em seguida */
+requestAnimationFrame(function(){setTimeout(function(){var s=document.createElement("script");s.src="https://scripts.converteai.net/1e9d3663-4e9d-45cb-9c39-1d16362c41e5/players/684d8948a513dfb8ce77ee91/v4/player.js";s.async=!0;document.head.appendChild(s);},0);});</script>
     </div>
   </div>
 </section>
